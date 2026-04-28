@@ -7,10 +7,9 @@ pipeline {
     }
 
     stages {
-
         stage('Checkout') {
             steps {
-                git 'https://github.com/Ashika05-cloud/maven-.git'
+                git branch: 'main', url: 'https://github.com/Ashika05-cloud/maven-.git'
             }
         }
 
